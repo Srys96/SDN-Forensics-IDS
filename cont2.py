@@ -351,6 +351,7 @@ class SimpleMonitor(simple_switch_13.SimpleSwitch13):
         pushbacks = set()
         # Set of attackers in the local domain
         attackers = set()
+	# Set date and time of attack
 	now = datetime.now()
 	dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
         for victim in victims:
